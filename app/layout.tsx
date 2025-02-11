@@ -3,7 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
-
+import Footer from "@/components/main/Footer";
 const roboto = Roboto({
   weight: ['400', '700'], 
   subsets: ['latin'],
@@ -11,8 +11,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Space Portfolio",
-  description: "This is my",
+  title: " Portfolio website",
+  description: "This is my potfolio website",
 };
 
 export default function RootLayout({
@@ -26,6 +26,7 @@ export default function RootLayout({
         <StarsCanvas/>
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
